@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
+import se331.rest.entity.Event;
 import se331.rest.entity.Organizer;
 import se331.rest.repository.OrganizerRepository;
 
@@ -25,6 +26,5 @@ public class OrganizerDaoImpl implements OrganizerDao {
          return organizerRepository.findById(id);
 
     }
-
 }
 
